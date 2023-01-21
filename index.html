@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="icon" href="./assets/icon.png">
+    
+    <title>Calculadora</title>
+</head>
+<body>
+    <section class="calculadora-basica">
+
+        <div class="inicio">
+            <h2>BEM-VINDO!<br> <br>
+                Faça operações básicas aqui</h2>
+            <button onclick="trocaDiv(1, 2)">Iniciar</button>
+        </div>
+
+        <div class="calculadora">
+            <h1>Calcule Operações Básicas</h1>
+            
+            <div class="numero-um">
+                <h2>Número 1:</h2>
+                <input type="number" name="primeiro-numero" id="primeiro-numero" placeholder="Digite um número">
+            </div>
+
+            <div class="selecionar-operacoes">
+                <h2>Selecione uma operação</h2>
+                <select id="operacoes" name="operacoes">
+                    <option value="mais" id="operacao">+</option>
+                    <option value="menos" id="operacao">-</option>
+                    <option value="vezes" id="operacao">x</option>
+                    <option value="dividir" id="operacao">÷</option>
+                </select>
+            </div>
+
+            <div class="numero-dois">
+                <h2>Número 2:</h2>
+                <input type="number" name="segundo-numero" id="segundo-numero" placeholder="Digite um número"> 
+            </div>
+
+            <button onclick="validar()">Calcular</button>
+        </div>
+
+        <div class="resultado">
+            <h2>Resultado!</h2>
+            <h3 id="resultado"></h3>
+            <div class="botoes">
+                <button onclick="trocaDiv(3, 2)">Calcular Novamente</button>
+                <button onclick="trocaDiv(3, 1)">Finalizar</button>
+            </div>
+        </div>
+
+    </section>
+</body>
+<script src="./js/main.js"></script>
+</html>
