@@ -47,11 +47,11 @@ function validar() {
         if (value == 'mais') {
             valorResultado.innerHTML = parseInt(primeiroNumero.value) + ' + ' + parseInt(segundoNumero.value) + ' = ' +  (parseInt(primeiroNumero.value) + parseInt(segundoNumero.value));
         } else if (value == 'menos') {
-            valorResultado.innerHTML = parseInt(primeiroNumero.value) + ' + ' + parseInt(segundoNumero.value) + ' = ' +  (parseInt(primeiroNumero.value) - parseInt(segundoNumero.value));
+            valorResultado.innerHTML = parseInt(primeiroNumero.value) + ' - ' + parseInt(segundoNumero.value) + ' = ' +  (parseInt(primeiroNumero.value) - parseInt(segundoNumero.value));
         } else if (value == 'vezes') {
-            valorResultado.innerHTML = parseInt(primeiroNumero.value) + ' + ' + parseInt(segundoNumero.value) + ' = ' +  (parseInt(primeiroNumero.value) * parseInt(segundoNumero.value));
+            valorResultado.innerHTML = parseInt(primeiroNumero.value) + ' X ' + parseInt(segundoNumero.value) + ' = ' +  (parseInt(primeiroNumero.value) * parseInt(segundoNumero.value));
         } else if (value == 'dividir') {
-            valorResultado.innerHTML = parseInt(primeiroNumero.value) + ' + ' + parseInt(segundoNumero.value) + ' = ' +  (parseInt(primeiroNumero.value) / parseInt(segundoNumero.value));
+            valorResultado.innerHTML = parseInt(primeiroNumero.value) + ' ÷ ' + parseInt(segundoNumero.value) + ' = ' +  (parseInt(primeiroNumero.value) / parseInt(segundoNumero.value));
         }
         trocaDiv(2, 3);
     }
